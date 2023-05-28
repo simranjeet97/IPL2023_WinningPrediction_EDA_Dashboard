@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container_res">
+        <h1>Match Winning Prediction</h1>
+        <div class="team">
+            <h2>{{ team1 }}</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: {{ probability1 }}%">{{ probability1 }}%</div>
+            </div>            
+        </div>
+        <div class="team">
+            <h2>{{ team2 }}</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: {{ probability2 }}%">{{ probability2 }}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

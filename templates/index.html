@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPL Match Winning Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>IPL Match Winning Prediction</h1>
+        <form action="/predict" method="post">
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="batting_team">Batting Team:</label>
+                    <select name="batting_team">
+                        <option value="Punjab Kings">Punjab Kings</option>
+                        <option value="Delhi Capitals">Delhi Capitals</option>
+                        <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                        <option value="Chennai Super Kings">Chennai Super Kings</option>
+                        <option value="Mumbai Indians">Mumbai Indians</option>
+                        <option value="Rajasthan Royals">Rajasthan Royals</option>
+                        <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+                        <option value="Gujarat Titans">Gujarat Titans</option>
+                        <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                        <option value="Lucknow Super Giants">Lucknow Super Giants</option>
+                    </select>
+                </div>
+                <div class="form-column">
+                    <label for="bowling_team">Bowling Team:</label>
+                    <select name="bowling_team">
+                        <option value="Punjab Kings">Punjab Kings</option>
+                        <option value="Delhi Capitals">Delhi Capitals</option>
+                        <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                        <option value="Chennai Super Kings">Chennai Super Kings</option>
+                        <option value="Mumbai Indians">Mumbai Indians</option>
+                        <option value="Rajasthan Royals">Rajasthan Royals</option>
+                        <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+                        <option value="Gujarat Titans">Gujarat Titans</option>
+                        <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                        <option value="Lucknow Super Giants">Lucknow Super Giants</option>
+                    </select>
+                </div>
+                <div class="form-column">
+                    <label for="city">City:</label>
+                    <select name="city">
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Abu Dhabi">Abu Dhabi</option>
+                        <option value="Kanpur">Kanpur</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Cape Town">Cape Town</option>
+                        <option value="Bengaluru">Bengaluru</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Johannesburg">Johannesburg</option>
+                        <option value="Durban">Durban</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Sharjah">Sharjah</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Navi Mumbai">Navi Mumbai</option>
+                        <option value="Port Elizabeth">Port Elizabeth</option>
+                        <option value="Dubai">Dubai</option>
+                        <option value="Centurion">Centurion</option>
+                        <option value="Dharamsala">Dharamsala</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="East London">East London</option>
+                        <option value="Visakhapatnam">Visakhapatnam</option>
+                        <option value="Rajkot">Rajkot</option>
+                        <option value="Cuttack">Cuttack</option>
+                        <option value="Ranchi">Ranchi</option>
+                        <option value="Kimberley">Kimberley</option>
+                        <option value="Raipur">Raipur</option>
+                        <option value="Indore">Indore</option>
+                        <option value="Bloemfontein">Bloemfontein</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="runs_left">Runs Left:</label>
+                    <input type="number" name="runs_left">
+                </div>
+                <div class="form-column">
+                    <label for="balls_left">Balls Left:</label>
+                    <input type="number" name="balls_left">
+                </div>
+                <div class="form-column">
+                    <label for="wickets_left">Wickets Left:</label>
+                    <input type="number" name="wickets_left">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="current_run_rate">Current Run Rate:</label>
+                    <input type="number" step="0.01" name="current_run_rate">
+                </div>
+                <div class="form-column">
+                    <label for="required_run_rate">Required Run Rate:</label>
+                    <input type="number" step="0.01" name="required_run_rate">
+                </div>
+                <div class="form-column">
+                    <label for="target">Target:</label>
+                    <input type="number" name="target">
+                </div>
+            </div>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>

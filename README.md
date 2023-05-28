@@ -12,4 +12,6 @@ This repository consists the dataset and model to predict which team wins and wh
 - 📍 Full Project - https://bit.ly/3BfC3N9
 
 
-![The Ultimate Guide to (1)](https://github.com/simranjeet97/IPL2023_WinningPrediction_EDA_Dashboard/assets/38141273/46a6cc39-8f70-453f-8338-0a1fcc8b167e)
+
+https://github.com/simranjeet97/IPL2023_WinningPrediction_EDA_Dashboard/assets/38141273/7cf887ab-83e1-4eaf-b400-3410fa336fd5
+
